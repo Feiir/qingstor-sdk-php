@@ -3330,6 +3330,7 @@ class Bucket
      * @param long 'Content-Length' Object content size
      * @param string 'Content-MD5' Object MD5sum
      * @param string 'Content-Type' Object content type
+     * @param string 'Cache-Control' Object cache control
      * @param string 'Expect' Used to indicate that particular server behaviors are required by the client
      * @param string 'X-QS-Copy-Source' Copy source, format (/<bucket-name>/<object-key>)
      * @param string 'X-QS-Copy-Source-Encryption-Customer-Algorithm' Encryption algorithm of the object
@@ -3360,6 +3361,7 @@ class Bucket
                 'Content-Length' => isset($options['Content-Length'])?$options['Content-Length']:null,
                 'Content-MD5' => isset($options['Content-MD5'])?$options['Content-MD5']:null,
                 'Content-Type' => isset($options['Content-Type'])?$options['Content-Type']:null,
+                'Cache-Control' => isset($options['Cache-Control'])?$options['Cache-Control']:null,
                 'Expect' => isset($options['Expect'])?$options['Expect']:null,
                 'X-QS-Copy-Source' => isset($options['X-QS-Copy-Source'])?$options['X-QS-Copy-Source']:null,
                 'X-QS-Copy-Source-Encryption-Customer-Algorithm' => isset($options['X-QS-Copy-Source-Encryption-Customer-Algorithm'])?$options['X-QS-Copy-Source-Encryption-Customer-Algorithm']:null,
@@ -3498,6 +3500,7 @@ class Bucket
      * uploadMultipartRequest: Build UploadMultipart's request
      * @link https://docs.qingcloud.com/qingstor/api/object/multipart/upload_multipart.html Documentation URL
      * @param long 'Content-Length' Object multipart content length
+     * @param string 'Content-MD5' Object multipart content MD5sum
      * @param string 'Content-MD5' Object multipart content MD5sum
      * @param string 'X-QS-Copy-Range' Specify range of the source object
      * @param string 'X-QS-Copy-Source' Copy source, format (/<bucket-name>/<object-key>)
