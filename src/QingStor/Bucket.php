@@ -3501,7 +3501,6 @@ class Bucket
      * @link https://docs.qingcloud.com/qingstor/api/object/multipart/upload_multipart.html Documentation URL
      * @param long 'Content-Length' Object multipart content length
      * @param string 'Content-MD5' Object multipart content MD5sum
-     * @param string 'Content-MD5' Object multipart content MD5sum
      * @param string 'X-QS-Copy-Range' Specify range of the source object
      * @param string 'X-QS-Copy-Source' Copy source, format (/<bucket-name>/<object-key>)
      * @param string 'X-QS-Copy-Source-Encryption-Customer-Algorithm' Encryption algorithm of the object
